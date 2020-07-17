@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1169
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "CuboNorthWind", "CuboNorthWind\CuboNorthWind.dwproj", "{CE73D315-092B-487C-B5DE-BC36D8CAB71F}"
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "MisPaquetesDeCarga", "MisPaquetesDeCarga\MisPaquetesDeCarga.dtproj", "{B502ABAF-2D48-4E56-8C72-EAB8A0AF8125}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -13,6 +15,8 @@ Global
 		{CE73D315-092B-487C-B5DE-BC36D8CAB71F}.Development|Default.ActiveCfg = Development
 		{CE73D315-092B-487C-B5DE-BC36D8CAB71F}.Development|Default.Build.0 = Development
 		{CE73D315-092B-487C-B5DE-BC36D8CAB71F}.Development|Default.Deploy.0 = Development
+		{B502ABAF-2D48-4E56-8C72-EAB8A0AF8125}.Development|Default.ActiveCfg = Development
+		{B502ABAF-2D48-4E56-8C72-EAB8A0AF8125}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
