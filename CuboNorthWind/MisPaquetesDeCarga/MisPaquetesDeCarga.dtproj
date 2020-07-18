@@ -26,26 +26,62 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">INSTANCIA-ANALI</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxsAVNfUFkUuBsmatIa5SgwAAAAACAAAAAAAQZgAAAAEAACAAAABFu9tQ3Mt6dxE6oo4+Y2aeJc21Ql0qGe6dO4VqiExBcwAAAAAOgAAAAAIAACAAAAC/PbafGfwyHiNPp2DBy0LH2DCdtv6RlarhPffS/Fk5xJAAAADncjQCb5wfe8p5lnj+BIP6gY+aElkDkAhofusq3n/BopndG56V/tODIDqPsnlglZKc5+MDFrJNSDu0XF7a2J2EriDqt3VeAW9cml/gfwnsIYq+4mFU0ZVq1kh2PCjoJkjo6UijM+LTeug1AdR/GvUa+LHTaAuD1qNtePU6yw+8NIJyvRyNQ1HS+faAtMN6FJZAAAAAajfCu5OMf/PnHaLapYN0gUgkbsHqTphp6Wxu5S1iOjKkErfbV5xm/3hK0tx77hEM7TWMw+2UEfv0RzHVAHxlDw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxsAVNfUFkUuBsmatIa5SgwAAAAACAAAAAAAQZgAAAAEAACAAAADzWomXXVq4WggrkGg0SVcdkjH/2ntxf/sOJAU/4g8nTAAAAAAOgAAAAAIAACAAAADZRSZ1DPbdbZQe4dKQtbi3NMXF36umsYXrXX3gKEq5EJAAAADFjlcMFGi+tKyjEyp0Ve9MTdNHAh8uLm5xP7GwA7ABjdGMZm5s7c3qNGsXTOEPj74//qChasrms02qc94E4I4Rg6MQVZBoNtvxajX/9IudHXMAX8IKQSPwSq32BsCc0cvoDiN1UQY+I/CSdo6fxpXKVp/JyjmJeJN03Kz6LpQ6l1j9IUpk1cWSCNtiFVxSbpdAAAAA8EhHSrJbj7X56wyf2m06GPRFTEnzJBmnfz8kkePNrzjcVb/evFHytjfiBweP9XvMSnZu0OGyEhQbAHiS+MAB+g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="HelloWorld.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="HelloWorldConVariables.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="CalculoDeDiscriminante.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="HelloWorld.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{289A0D0D-1ABF-4D4B-8311-8C92764D127F}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{9A4B39E5-F495-4F61-9934-00DB355202A9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">HelloWorld</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{811F7DFA-0848-44E6-8C33-57AE54D868D4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{80DCFA43-38C0-4019-B5DE-088D52E1A806}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="HelloWorldConVariables.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{3BAAADB3-705F-4391-9501-7AB3C365850D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">HelloWorldConVariables</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">4</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{AA62CD00-0161-4940-A62A-8C5AB43D57D4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="CalculoDeDiscriminante.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{1452BDD8-752E-450A-A2CF-CBFEB10149ED}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">CalculoDeDiscriminante</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{3E677EE7-CEBF-41EC-A475-949F5B59178F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -76,7 +112,13 @@
         <LinkedAzureSSISIR />
         <LinkedAzureStorage />
         <RemoteExecutionFolder />
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2020-07-17T23:48:13.4544355Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>
