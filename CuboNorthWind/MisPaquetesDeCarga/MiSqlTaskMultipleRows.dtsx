@@ -1,0 +1,350 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/1/2020 2:28:56 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="INSTANCIA-ANALI"
+  DTS:CreatorName="INSTANCIA-ANALI\usranalisis"
+  DTS:DTSID="{53776EDA-19FE-45CC-912E-73B643676C5A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="MiSqlTaskMultipleRows"
+  DTS:PackageType="5"
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{6E8B7C53-DAC4-47C7-B351-16EE8EBA3DAC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[(local).MyDb.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8A6AC442-E0F5-444D-ACE8-BA711CDE81A8}"
+      DTS:ObjectName="(local).MyDb.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=(local);User ID=sa;Initial Catalog=MyDb;Provider=SQLNCLI11.1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B124F909-06DA-4717-AE93-276F3ECC4681}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Descontinuado">
+      <DTS:VariableValue
+        DTS:DataType="11">-1</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{337B51CD-C4F0-4EA0-8B6E-6196CE230004}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IdDelProducto">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{38B3188E-9BC7-4780-8B66-3D8405F5F4AE}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="LaCantidadPorUnidad">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9471A628-2AB2-4D37-A583-16FE06630740}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="LasFilas">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{857191AE-2E8D-4070-BA62-8064020E4FB2}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PrecioMaximo">
+      <DTS:VariableValue
+        DTS:DataType="5">30.</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A0B93F30-0749-4453-9513-8648EE3E74EF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PrecioMinimo">
+      <DTS:VariableValue
+        DTS:DataType="5">20.</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{76A0A0F4-12AB-4D37-8A77-7298873BD3EF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PrecioUnitario">
+      <DTS:VariableValue
+        DTS:DataType="14">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Carga los productos"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{993E725C-B237-4A7D-B855-FEF70448A0C3}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Carga los productos"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4EF10A51-244F-45BD-979A-A0086C384898}"
+          SQLTask:SqlStatementSource="declare @precioMinimo as money = ?;&#xA;declare @precioMaximo as money = ?;&#xA;select &#xA;p.ProductID, p.ProductName, p.QuantityPerUnit, &#xA;p.UnitPrice, p.Discontinued &#xA;from Products p&#xA;where p.UnitPrice between @precioMinimo and @precioMaximo;"
+          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::LasFilas" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::PrecioMaximo"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::PrecioMinimo"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{730AB9BE-D41F-45F8-ACE6-B27A6DC1623A}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachADOEnumerator"
+        DTS:DTSID="{1D321190-75D2-4745-ADC3-2384F6546302}"
+        DTS:ObjectName="{1D321190-75D2-4745-ADC3-2384F6546302}">
+        <DTS:ObjectData>
+          <FEEADO
+            EnumType="EnumerateRowsInFirstTable"
+            VarName="User::LasFilas" />
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{7567DA30-570E-4D38-BB13-016D392C0F14}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="ElNombreDelProducto">
+          <DTS:VariableValue
+            DTS:DataType="8">Hello world</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Inserte el registro"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{3C7241D2-43CC-4AC2-A65B-5A20470E87A9}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Inserte el registro"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{8A6AC442-E0F5-444D-ACE8-BA711CDE81A8}"
+              SQLTask:SqlStatementSource="  insert into MisProductos (ProductID, ProductName, QuantityPerUnit, UnitPrice, Discontinued)&#xA;  values (?, ?, ?, ?, ?);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="User::Descontinuado"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="11"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="User::LaCantidadPorUnidad"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::IdDelProducto"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="2"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="User::PrecioUnitario"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="6"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::ElNombreDelProducto"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{FB1B30C4-E50D-44A9-91A9-589D930C4CEA}"
+          DTS:ObjectName="{FB1B30C4-E50D-44A9-91A9-589D930C4CEA}"
+          DTS:ValueIndex="4"
+          DTS:VariableName="User::Descontinuado" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{FE0E8559-9437-4A27-9E66-80688DF3D1E7}"
+          DTS:ObjectName="{FE0E8559-9437-4A27-9E66-80688DF3D1E7}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::IdDelProducto" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{95DDA6BE-7D9F-465E-958E-664F56814778}"
+          DTS:ObjectName="{95DDA6BE-7D9F-465E-958E-664F56814778}"
+          DTS:ValueIndex="3"
+          DTS:VariableName="User::PrecioUnitario" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{91F0FDD2-B581-49CD-93F7-E8D70BBBA1A9}"
+          DTS:ObjectName="{91F0FDD2-B581-49CD-93F7-E8D70BBBA1A9}"
+          DTS:ValueIndex="2"
+          DTS:VariableName="User::LaCantidadPorUnidad" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncar la tabla destino"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C5DCC123-0DC2-4802-BB4E-DD200F200D23}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncar la tabla destino"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8A6AC442-E0F5-444D-ACE8-BA711CDE81A8}"
+          SQLTask:SqlStatementSource="truncate table MisProductos;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{F29263C8-758C-438A-BEAD-F1901D0139C5}"
+      DTS:From="Package\Carga los productos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Foreach Loop Container" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Carga los productos"
+          TopLeft="360.5,80" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Foreach Loop Container\Inserte el registro"
+          TopLeft="46.3333333333334,58.6666666666666" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="262,249"
+          Size="262,292"
+          Id="Package\Foreach Loop Container"
+          TopLeft="328.666666666667,222.666666666667" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Truncar la tabla destino"
+          TopLeft="362.666666666667,152" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="446.5,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13.166666666667,100.666666666667"
+              Start="0,0"
+              End="13.166666666667,93.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.3333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46.3333333333335"
+                    Point2="0,50.3333333333335"
+                    Point3="4,50.3333333333335" />
+                  <mssgle:LineSegment
+                    End="9.16666666666703,50.3333333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.16666666666703,50.3333333333335"
+                    Point2="13.166666666667,50.3333333333335"
+                    Point3="13.166666666667,54.3333333333335" />
+                  <mssgle:LineSegment
+                    End="13.166666666667,93.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Este paquete se encarga de insertar registros en una tabla con base en los que estan en la tabla de Productos en cierto rango de Precio"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="743,40"
+          Id="cd0c8698-73a2-4b70-a5d2-93b6a80cb184"
+          TopLeft="185.833333333333,36.6666666666667" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

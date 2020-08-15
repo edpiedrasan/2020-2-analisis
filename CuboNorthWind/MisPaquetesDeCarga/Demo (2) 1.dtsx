@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Demo  2  1"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{45FC27AF-1E60-40C7-AB0E-96F8CB17E6C7}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{D32FBA2B-92AC-48D2-8088-AE3F01F896B8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -544,17 +544,6 @@
           DTS:VariableName="User::Filename" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Foreach Loop Container 1"
-      DTS:CreationName="STOCK:FOREACHLOOP"
-      DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{17E07512-0A7F-4C13-9B9D-4F6BC10D04C2}"
-      DTS:ExecutableType="STOCK:FOREACHLOOP"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Loop Container 1">
-      <DTS:Variables />
-      <DTS:Executables />
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -567,7 +556,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Foreach Loop Container\Data Flow Task"
@@ -605,13 +594,6 @@
           Size="384,266"
           Id="Package\Foreach Loop Container"
           TopLeft="684,77" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="325,126"
-          Size="325,169"
-          Id="Package\Foreach Loop Container 1"
-          TopLeft="148,103" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
